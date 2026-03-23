@@ -1,0 +1,17 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "vanta-plugins",
+  "version": "1.0.0",
+  "description": "Official Vanta plugin collection for Claude Code",
+  "owner": {
+    "name": "Vanta",
+    "email": "support@vanta.com"
+  },
+  "plugins": [
+    {
+      "name": "vanta",
+      "source": ".",
+      "description": "Vanta MCP server — security and compliance tools"
+    }
+  ]
+}

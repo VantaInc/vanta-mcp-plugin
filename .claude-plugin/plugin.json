@@ -1,0 +1,13 @@
+{
+  "name": "vanta",
+  "version": "1.0.0",
+  "description": "Vanta MCP server integration for Claude Code",
+  "author": {
+    "name": "Vanta",
+    "url": "https://www.vanta.com"
+  },
+  "homepage": "https://github.com/VantaInc/vanta-mcp-plugin",
+  "repository": "https://github.com/VantaInc/vanta-mcp-plugin",
+  "license": "MIT",
+  "keywords": ["vanta", "security", "compliance", "mcp"]
+}
