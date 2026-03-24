@@ -1,33 +1,46 @@
 # Vanta Plugin for Claude Code
 
-This repository provides an official Claude Code plugin that connects Claude to the **[Vanta MCP Server](https://help.vanta.com/en/articles/14094979-connecting-to-vanta-mcp)**, giving you access to Vanta's security and compliance tools directly inside your Claude Code sessions.
+This plugin connects Claude Code to Vanta's MCP server and Vanta skills, enabling you to discover failing tests, generate infrastructure-as-code fixes, and open pull requests all without leaving your editor.
 
-> **Note:** Vanta's remote MCP server is currently in **beta**. Request access at [support@vanta.com](mailto:support@vanta.com).
+> **Note:** Vanta's remote MCP server is currently in **beta**. Request access at [mailto:support@vanta.com](./mailto:support@vanta.com).
 
 ---
 
 ## Features
 
-### Vanta MCP Server
+### Test Remediation Skill
 
-Claude Code automatically connects to Vanta's hosted MCP server at:
+Instructs Claude how to find failing compliance tests, generate infrastructure-as-code fixes, and ship pull requests:
 
-```
-https://mcp.vanta.com/mcp
-```
+- **Automated IaC remediation** — Generates Terraform, CloudFormation, or CDK changes to fix failing tests and opens a PR
+- **Test prioritization** — Shows failing tests ranked by what can be fixed from your current repository
+- **Guided remediation** — For tests that require manual steps (console changes, vendor configs), provides step-by-step instructions
 
-This gives Claude tools to:
+### Slash Commands
+| Command | Description |
+| --- | --- |
+| `/vanta:fix <test-id or URL>` | Fix a failing test by generating IaC changes and opening a PR |
+| `/vanta:tests` | Show failing tests prioritized by what you can fix from this repo |
 
-- **Remediate failing tests** — list failing compliance tests, inspect which entities are out of scope, and get the context needed to fix them
-- **Manage controls** — browse controls and their framework mappings, list associated tests, and access linked evidence documents
-- **Assess vendor risk** — review vendors, run security assessments, manage risk attributes, and track compliance documentation
-- **Track vulnerabilities** — surface vulnerable assets, and monitor remediation progress
-- **Govern policies** — list, download, and upload policy documents across your compliance program
-- **Analyze compliance gaps** — enumerate framework requirements and identify coverage gaps across SOC 2, ISO 27001, and more
+### Integrated Vanta MCP Server
+
+Claude Code automatically connects to Vanta's hosted MCP server at `https://mcp.vanta.com/mcp`. This gives Claude tools to:
+
+- Manage controls and their framework mappings
+- Assess vendor risk and track compliance documentation
+- Surface vulnerable assets and monitor remediation progress
+- List, download, and upload policy documents
+- Enumerate framework requirements and identify coverage gaps across SOC 2, ISO 27001, and more
 
 ---
 
-## Installation (Claude Code)
+## Installation Guide
+
+### Prerequisites
+
+- [Claude Code CLI](https://docs.anthropic.com/en/docs/claude-code) installed
+- A [Vanta](https://vanta.com) account
+- Your infrastructure-as-code repository checked out locally
 
 ### 1. Add this plugin's marketplace
 
@@ -43,22 +56,14 @@ This gives Claude tools to:
 
 ### 3. Authenticate
 
-In Claude Code, run `/mcp` and select **vanta**. A browser window will open in your Vanta app — click **Allow** to complete OAuth authorization.
+In Claude Code, run `/mcp` and select **vanta**. A browser window will open in your Vanta app. Click **Allow** to complete OAuth authorization. All integrations use OAuth, so there are no API keys or tokens to manage.
 
----
+## Resources
 
-## Manual Setup
-
-For detailed setup instructions across Claude Code, Cursor, and Perplexity, see the [Connecting to Vanta MCP](https://help.vanta.com/en/articles/14094979-connecting-to-vanta-mcp#h_887ce3f337) guide.
-
----
-
-## Authentication
-
-All integrations use **OAuth** against `https://mcp.vanta.com/mcp`. No API keys or tokens to manage.
-
----
+- [Connecting to Vanta MCP](https://help.vanta.com/en/articles/14094979-connecting-to-vanta-mcp#h_887ce3f337) — setup guide for Claude Code, Cursor, and Perplexity
+- [Vanta documentation](https://docs.vanta.com)
+- [Report an issue](https://github.com/VantaInc/vanta-mcp-plugin/issues)
 
 ## License
 
-This project is licensed under the terms of the MIT open source license. Please refer to [LICENSE](LICENSE) file for details.
+MIT — see [LICENSE](LICENSE) for details.
