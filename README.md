@@ -25,6 +25,12 @@ This gives Claude tools to:
 - **Govern policies** — list, download, and upload policy documents across your compliance program
 - **Analyze compliance gaps** — enumerate framework requirements and identify coverage gaps across SOC 2, ISO 27001, and more
 
+### Slash Commands
+| Command                            | Description |
+|------------------------------------| --- |
+| `/vanta:fix-test <test-id or URL>` | Fix a failing test by generating IaC changes and opening a PR |
+| `/vanta:list-tests`                | Show failing tests prioritized by what you can fix from this repo |
+
 ---
 
 ## Installation (Claude Code)
@@ -45,19 +51,19 @@ This gives Claude tools to:
 
 In Claude Code, run `/mcp` and select **vanta**. A browser window will open in your Vanta app — click **Allow** to complete OAuth authorization.
 
----
-
 ## Manual Setup
 
 For detailed setup instructions across Claude Code, Cursor, and Perplexity, see the [Connecting to Vanta MCP](https://help.vanta.com/en/articles/14094979-connecting-to-vanta-mcp#h_887ce3f337) guide.
-
----
 
 ## Authentication
 
 All integrations use **OAuth** against `https://mcp.vanta.com/mcp`. No API keys or tokens to manage.
 
----
+## Resources
+
+- [Connecting to Vanta MCP](https://help.vanta.com/en/articles/14094979-connecting-to-vanta-mcp#h_887ce3f337) — setup guide for Claude Code, Cursor, and Perplexity
+- [Vanta documentation](https://docs.vanta.com)
+- [Report an issue](https://github.com/VantaInc/vanta-mcp-plugin/issues)
 
 ## License
 
