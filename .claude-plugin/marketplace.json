@@ -10,7 +10,7 @@
   "plugins": [
     {
       "name": "vanta",
-      "source": ".",
+      "source": "./plugins/vanta",
       "description": "Vanta MCP server — security and compliance tools"
     }
   ]
