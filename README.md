@@ -47,7 +47,16 @@ This gives Claude tools to:
 /plugin install vanta
 ```
 
-### 3. Authenticate
+### 3. Reload the Vanta Plugin
+
+```
+/reload-plugins
+```
+
+This loads the plugin and starts the MCP server without restarting Claude Code.
+
+
+### 4. Authenticate
 
 In Claude Code, run `/mcp` and select **vanta**. A browser window will open in your Vanta app — click **Allow** to complete OAuth authorization.
 
