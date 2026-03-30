@@ -13,8 +13,9 @@ Show the user their failing Vanta tests, ranked by what the plugin can help with
     - Present these first. These are one-command fixes with `/vanta:fix-test <testId>`.
    **Fixable with guidance** — Tests that are code-remediable but may not match this repo (different cloud provider, different integration). The user can still get remediation code, but may need to apply it elsewhere.
    **Manual steps needed** — Tests that require configuration changes in external tools, Vanta settings, or manual processes. The plugin can provide guidance but not generate code.
-3. **Present the results.** For each tier, show:
-    - Test name and ID
+3. **Present the results.** For each tier, show a table with columns:
+    - Test name
+    - Test ID
     - Number of failing entities
     - Integration (e.g., AWS, GitHub, Azure)
     - How long the test has been failing (from `latestFlipDate`)
