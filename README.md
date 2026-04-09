@@ -10,10 +10,17 @@ This repository provides an official Claude Code plugin that connects Claude to 
 
 ### Vanta MCP Server
 
-Claude Code automatically connects to Vanta's hosted MCP server at:
+Claude Code automatically connects to Vanta's hosted MCP server for your region:
 
-```
+```bash
+# US
 https://mcp.vanta.com/mcp
+
+# EU
+https://mcp.eu.vanta.com/mcp
+
+# Aus
+https://mcp.aus.vanta.com/mcp
 ```
 
 This gives Claude tools to:
@@ -26,9 +33,10 @@ This gives Claude tools to:
 - **Analyze compliance gaps** — enumerate framework requirements and identify coverage gaps across SOC 2, ISO 27001, and more
 
 ### Slash Commands
-| Command                            | Description |
-|------------------------------------| --- |
-| `/vanta:fix-test <test-id or URL>` | Fix a failing test by generating IaC changes and opening a PR |
+
+| Command                            | Description                                                       |
+| ---------------------------------- | ----------------------------------------------------------------- |
+| `/vanta:fix-test <test-id or URL>` | Fix a failing test by generating IaC changes and opening a PR     |
 | `/vanta:list-tests`                | Show failing tests prioritized by what you can fix from this repo |
 
 ---
@@ -55,10 +63,9 @@ This gives Claude tools to:
 
 This loads the plugin and starts the MCP server without restarting Claude Code.
 
-
 ### 4. Authenticate
 
-In Claude Code, run `/mcp` and select **vanta**. A browser window will open in your Vanta app — click **Allow** to complete OAuth authorization.
+In Claude Code, run `/mcp` and select **vanta-\*** for you're region. A browser window will open in your Vanta app — click **Allow** to complete OAuth authorization.
 
 ## Manual Setup
 
@@ -66,7 +73,7 @@ For detailed setup instructions across Claude Code, Cursor, and Perplexity, see 
 
 ## Authentication
 
-All integrations use **OAuth** against `https://mcp.vanta.com/mcp`. No API keys or tokens to manage.
+All integrations use **OAuth** against the MCP server. No API keys or tokens to manage.
 
 ## Resources
 
