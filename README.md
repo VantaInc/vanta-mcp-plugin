@@ -2,7 +2,10 @@
 
 This repository provides an official Claude Code plugin that connects Claude to the **[Vanta MCP Server](https://help.vanta.com/en/articles/14094979-connecting-to-vanta-mcp)**, giving you access to Vanta's security and compliance tools directly inside your Claude Code sessions.
 
-> **Note:** Vanta's remote MCP server is currently in **beta**. Request access at [support@vanta.com](mailto:support@vanta.com).
+> [!NOTE]  
+> Vanta’s remote MCP server is currently in beta and released to all customers. Before connecting, confirm the following:
+> 
+> **Vanta role**: You must be a Vanta Admin. The MCP server is not currently accessible to non-Admin users. Access for non-admin users is coming soon. 
 
 ---
 
