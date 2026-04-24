@@ -10,6 +10,6 @@
   "repository": "https://github.com/VantaInc/vanta-mcp-plugin",
   "license": "MIT",
   "keywords": ["vanta", "security", "compliance", "mcp"],
-  "mcpServers": "./plugins/vanta/.mcp.json",
-  "skills": "./plugins/vanta/skills/"
+  "mcpServers": "./.mcp.json",
+  "skills": "./skills/"
 }
