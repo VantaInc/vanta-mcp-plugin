@@ -1,14 +1,16 @@
 {
-  "vanta-us": {
-    "type": "http",
-    "url": "https://mcp.vanta.com/mcp"
-  },
-  "vanta-eu": {
-    "type": "http",
-    "url": "https://mcp.eu.vanta.com/mcp"
-  },
-  "vanta-aus": {
-    "type": "http",
-    "url": "https://mcp.aus.vanta.com/mcp"
+  "mcpServers": {
+    "vanta-us": {
+      "type": "http",
+      "url": "https://mcp.vanta.com/mcp"
+    },
+    "vanta-eu": {
+      "type": "http",
+      "url": "https://mcp.eu.vanta.com/mcp"
+    },
+    "vanta-aus": {
+      "type": "http",
+      "url": "https://mcp.aus.vanta.com/mcp"
+    }
   }
 }
