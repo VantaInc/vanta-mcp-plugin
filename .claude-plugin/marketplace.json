@@ -6,7 +6,7 @@
   "plugins": [
     {
       "name": "vanta",
-      "source": "./plugins/vanta"
+      "source": "./"
     }
   ]
 }
