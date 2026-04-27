@@ -1,12 +1,12 @@
 {
-  "name": "vanta-plugins",
+  "name": "vanta-plugin",
   "owner": {
     "name": "Vanta"
   },
   "plugins": [
     {
       "name": "vanta",
-      "source": "./plugins/vanta"
+      "source": "./"
     }
   ]
 }
