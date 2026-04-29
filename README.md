@@ -46,19 +46,21 @@ This gives Claude tools to:
 
 ## Installation (Claude Code)
 
-### 1. Add this plugin's marketplace
+### 1. Update the official marketplace
 
 ```
-/plugin marketplace add VantaInc/vanta-mcp-plugin
+/plugin marketplace update anthropics/claude-plugins-official
 ```
+
+This ensures you have the latest plugin listings from the official Claude Code marketplace.
 
 ### 2. Install the plugin
 
 ```
-/plugin install vanta
+/plugin install vanta-mcp-plugin@claude-plugins-official
 ```
 
-### 3. Reload the Vanta Plugin
+### 3. Reload plugins
 
 ```
 /reload-plugins
@@ -68,7 +70,7 @@ This loads the plugin and starts the MCP server without restarting Claude Code.
 
 ### 4. Authenticate
 
-In Claude Code, run `/mcp` and select **vanta-\*** for you're region. A browser window will open in your Vanta app — click **Allow** to complete OAuth authorization.
+In Claude Code, run `/mcp` and select **vanta-\*** for your region. A browser window will open in your Vanta app — click **Allow** to complete OAuth authorization.
 
 ## Manual Setup
 
