@@ -1,5 +1,6 @@
 {
   "name": "vanta-plugin",
+  "description": "Vanta plugin for Claude — connect to the Vanta MCP server for compliance test remediation, controls, vendor risk, and policy management.",
   "owner": {
     "name": "Vanta"
   },
